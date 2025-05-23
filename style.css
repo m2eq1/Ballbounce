@@ -1,0 +1,58 @@
+body {
+    background-color: #466eb4;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#counter {
+    color: black;
+    font-size: 24px;
+    font-family: monospace;
+    background: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.theButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+.ball {
+  background-color: #FBDB93;
+  border-radius: 50%;
+}
+
+@keyframes fall {
+    from { top: 0; }
+    to { top: 100vh; }
+}
+
